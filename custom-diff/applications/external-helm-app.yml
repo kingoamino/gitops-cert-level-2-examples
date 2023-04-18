@@ -22,6 +22,8 @@ spec:
     syncOptions:
       - CreateNamespace=true
   ignoreDifferences:
-  annotations:
-    
-   
+    - group: apps
+      kind: Deployment
+      jsonPointers:
+      - /spec/annotations/
+      - /spec/data
